@@ -16,6 +16,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   font-size: 100%;
   font-family: inherit;
   vertical-align: baseline;
+  box-sizing: border-box;
 }
 /* remember to define focus styles! */
 :focus {
@@ -48,5 +49,30 @@ blockquote, q {
 /*----------------------------------------------------*/
 
 body {
-   background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+}
+
+.polaroid {
+  width: 190px;
+  padding: 10px 10px 15px;
+  margin: 0 0 27px 30px;
+  background: white;
+  font-size: 18px;
+  text-align: center;
+  font-family: "Marker Felt", sans-serif;
+  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+  -webkit-transform: rotate(-2deg);
+}
+
+img {
+  max-width: 100%;
+  width: 190px;
+  margin-bottom: 12px;
+  height: auto;
+}
+
+div.polaroid:after {
+  content: attr(title);
 }
