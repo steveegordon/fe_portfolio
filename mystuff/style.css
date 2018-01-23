@@ -55,11 +55,12 @@ body {
 }
 
 .polaroid {
-  width: 190px;
-  padding: 10px 10px 15px;
-  margin: 0 0 27px 30px;
+  height: calc(5vw * 1.19);
+  width: 5vw;
+  padding: calc(5% * .0526) calc(5% * .0526) calc(5% * .0789) calc(5% * .0526);
+  margin: 2% 0 0 2%;
   background: white;
-  font-size: 18px;
+  font-size: 10px;
   text-align: center;
   font-family: "Marker Felt", sans-serif;
   -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
@@ -67,12 +68,66 @@ body {
 }
 
 img {
-  max-width: 100%;
-  width: 190px;
+  width: calc(100% * .857);
   margin-bottom: 12px;
-  height: auto;
+  height: calc(100% * .709);
 }
 
 div.polaroid:after {
   content: attr(title);
+}
+
+div#tv:after {
+  content: attr(title);
+  z-index: 20;
+  color: white;
+  font-size: 5px;
+  position: absolute;
+  top: 97.5%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+#tv {
+  margin: 5% 5vw 5% 30vw;
+  width: 40vw;
+  height: calc(40vw * .578);
+  background: black;
+  position: relative;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+  float: left;
+}
+
+#screen {
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  width: calc(100% - 4%);
+  height: calc(100% - (4% * 1.73));
+  background-image: url("static.webp");
+  background-size: 100%;
+  transform: translate(-50%, -50%);
+}
+
+#frame {
+  position: relative;
+  margin-top: 1%;
+  width: 20vw;
+  height: calc(31.25vw);
+  background: #9C6F3E;
+  float: left;
+}
+
+#corkboard {
+  margin: 0;
+  background: black;
+  height: calc(31.25vw - 20px);
+  width: calc(20vw - 20px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
