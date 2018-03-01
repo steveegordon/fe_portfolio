@@ -1,0 +1,162 @@
+
+/*---------------Eric Meyer CSS Reset-------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+ol, ul {
+  list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+}
+blockquote, q {
+  quotes: "" "";
+}
+/*----------------------------------------------------*/
+
+@font-face {
+  font-family: espn;
+  src: url(assets/sI.ttf);
+}
+
+#viewport {
+  height: 100vh;
+  width: 100vw;
+}
+
+header {
+  height: 44px;
+  width: 100%;
+  background: #2b2c2d;
+  box-shadow: 0 4px 2px -2px rgba(0,0,0,0.3);
+}
+
+a#mobile-nav {
+  height: 44px;
+  width: 44px;
+  background: transparent;
+  position: relative;
+  float: left;
+  z-index: 3;
+}
+
+span {
+  width: 24px;
+  background: #ffffff;
+  height: 3px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  top: 21px;
+  border-radius: 3px;
+}
+
+span::before {
+  width: 24px;
+  background: #ffffff;
+  height: 3px;
+  margin-top: -7px;
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 3px;
+
+}
+
+span::after {
+  width: 24px;
+  background: #ffffff;
+  height: 3px;
+  margin-top: 7px;
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 3px;
+}
+
+h1 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 24px;
+  width: 120px;
+  float: left;
+}
+
+h1::before {
+  width: 200px;
+  content: '';
+  background: #d00;
+  transform: skew(-25deg, 0);
+  height: 44px;
+  display: block;
+  position: absolute;
+  left: -30px;
+  top: 0;
+  z-index: 2;
+}
+
+h1::after {
+  width: 200px;
+  content: '';
+  background: #b40000;
+  left: -20px;
+  position: absolute;
+  top: 0;
+  display: block;
+  height: 44px;
+  z-index: 1;
+  transform: skew(-25deg, 0);
+}
+
+#main-logo {
+  background: transparent;
+  width: 110px;
+/*  height: 24px;*/
+  margin: auto auto auto 10px;
+  position: absolute;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 24px;
+  font-family: espn;
+  line-height: 24px;
+  text-align: bottom;
+  z-index: 3;
+}
+
+#viewport {
+background-color: #edeef0;
+}
