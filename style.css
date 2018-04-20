@@ -219,6 +219,12 @@ h1::after {
     border-bottom: 1px solid #edeef0;
   }
 
+  .subContent {
+    width: calc(100% - 180px);
+    display: inline-block;
+    padding: 12px 20px 12px 8px;
+  }
+
   #content {
     width: 660px;
     margin: 0px calc((100vw - 660px) / 2) 0px calc((100vw - 660px) / 2);
@@ -266,6 +272,12 @@ h1::after {
     background-color: white;
     border-top: 2px #cbccce solid;
     border-bottom: 1px solid #edeef0;
+  }
+
+  .subContent {
+    width: calc(100% - 180px);
+    display: inline-block;
+    padding: 12px 20px 12px 8px;
   }
 
 }
@@ -330,10 +342,21 @@ h2 {
   font-family: sans-serif;
 }
 
+h3 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #1d1e1f;
+  font-family: sans-serif;
+  margin-bottom: 6px;
+  margin-right: 4px;
+}
+
 p {
   font-family: sans-serif;
   color: #6c6d6f;
   font-size: 14px;
+  max-height: 72px;
 }
 
 #hheader {
@@ -355,4 +378,24 @@ p {
   padding: 12px 0px 0px 20px;
   display: inline-block;
   vertical-align: top;
+}
+
+.logo {
+  display: inline-block;
+  width: 72px;
+  height: 40px;
+}
+
+h4 {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: .15em;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #1d1e1f;
+  font-family: sans-serif;
+  height: 100%;
+  vertical-align: top;
+  padding-top: 14.5px;
 }
