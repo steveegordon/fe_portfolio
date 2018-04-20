@@ -41,6 +41,8 @@ function createArticle(num, headlineData, titleData, blurbData){
 var number = num.toString();
 var article = document.createElement('article');
 var heading = document.createElement('div');
+var logo = document.createElement('div');
+var headingText = document.createElement('h4');
 var picture = document.createElement('picture');
 var source = document.createElement('source');
 var img = document.createElement('img');
@@ -49,7 +51,8 @@ var headline = document.createElement('h3');
 var blurb = document.createElement('p');
 
 heading.className = 'heading';
-heading.innerHTML = headlineData;
+logo.className = 'logo';
+headingText.innerHTML = headlineData;
 source.setAttribute("srcset", "assets/article" + number + ".jpeg");
 img.className = 'subPic';
 img.setAttribute("src", "assets/article" + number + ".jpeg");
@@ -57,6 +60,8 @@ subContent.className = 'subContent';
 headline.innerHTML = titleData;
 blurb.innerHTML = blurbData;
 
+heading.appendChild(logo);
+heading.appendChild(headingText);
 picture.appendChild(source);
 picture.appendChild(img);
 subContent.appendChild(headline);
