@@ -5,8 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>STEVESPN: The Worldwide Leader in Sports</title>
   <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
-<!--   <script type="text/javascript" src="app.js"></script> -->
 </head>
 <body>
   <div id="viewport">
@@ -18,6 +16,7 @@
         <a id="main-logo" href="/">STEVESPN</a>
       </h1>
     </header>
+    <!-- Main article hardcoded, could be ajaxed or loaded from server -->
           <article class="main">
         <picture>
           <source media="(min-width: 768px)" srcset="assets/race660.jpg">
@@ -29,30 +28,20 @@
         </div>
       </article>
           <div id="headlines">
+      <!-- Hardcoded headlines, ditto -->
       <h4 id="hheader">Top Headlines</h4>
       <ul>
-        <li>Sources:</li>
-        <li>Dodgers:</li>
-        <li>"Pollywogs can fly!</li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>OTL: Spartan freshman subject of investigation</li>
+        <li>Rizzo at Florida vigil: 'Something has to change'</li>
+        <li>Arizona cheerleader ejected for heckling ASU</li>
+        <li>U.S. skier Shiffrin misses out on slalom medal</li>
+        <li>Silver on Magic, $50K fine: Message was clear</li>
+        <li>Young's spirits buoyed by call from the Big O</li>
+        <li>Young stars MLB teams should lock up now</li>
       </ul>
     </div>
     <div id="content">
-      <article>
-        <div class="heading">
-        </div>
-        <picture>
-          <source media="(min-width: 768px)" srcset="assets/ump.jpeg">
-          <img class="subPic" src="assets/ump.jpeg" alt="Umpire">
-        </picture>
-        <div class="subContent">
-          <h3></h3>
-          <p></p>
-        </div>
-      </article>
+      <!-- All content loaded in through AJAX -->
     </div>
   </div>
 </body>

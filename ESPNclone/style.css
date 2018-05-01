@@ -51,7 +51,10 @@ blockquote, q {
   box-sizing: border-box;
 }
 /*----------------------------------------------------*/
+/*ALL STYLING NEEDS REFACTORING PARTICULARLY RESPONSIVE CSS
+REDUNDANCY */
 
+/*Base styling*/
 body {
   background-color: #edeef0;
 }
@@ -194,17 +197,122 @@ h1::after {
   z-index: 3;
 }
 
-@media screen and (min-width: 768px) {
+img {
+  width: 100%;
+}
+
+.articleContent {
+  padding: 12px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33.6px;
+  margin-right: 4px;
+  margin-bottom: 6px;
+  color: #1d1e1f;
+  font-family: sans-serif;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #1d1e1f;
+  font-family: sans-serif;
+  margin-bottom: 6px;
+  margin-right: 4px;
+}
+
+p {
+  font-family: sans-serif;
+  color: #6c6d6f;
+  font-size: 14px;
+  line-height: 19px;
+  max-height: 72px;
+}
+
+#hheader {
+  margin: 0;
+  padding: 0px 12px 0px 12px;
+  width: 100%;
+  height: 43px;
+  border-bottom: 1px solid #edeef0;
+  vertical-align: baseline;
+  line-height: 44px;
+  font-size: 16px;
+  font-family: sans-serif;
+  color: #6c6d6f;
+}
+
+.subPic {
+  width: 180px;
+  height: 120px;
+  padding: 12px 0px 0px 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.logo {
+  display: inline-block;
+  width: 72px;
+  height: 40px;
+}
+
+.heading h4 {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: .15em;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #1d1e1f;
+  font-family: sans-serif;
+  height: 100%;
+  vertical-align: top;
+  padding-top: 14.5px;
+}
+
+/*Mid-size responsive CSS*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+  ul, ol {
+    column-count: 2;
+    column-gap: 20px;
+    height: 137px;
+    padding-top: 12px;
+    border-bottom: 1px #cbccce solid;
+  }
+
+  li {
+    height: calc(100% / 4);
+  }
 
   .main {
     margin: 20px calc((100vw - 660px) / 2) 0px calc((100vw - 660px) / 2);
     background-color: white;
   }
+    div #hheader {
+    border-top: 2px #cbccce solid;
+    height: 50px;
+
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: .15em;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #1d1e1f;
+  font-family: sans-serif;
+  vertical-align: top;
+  padding-top: 14.5px;
+  }
 
     #headlines {
     display: inline-block;
     width: 660px;
-    height: 261px;
+    height: 186px;
     background-color: white;
     margin: 10px calc((100vw - 660px) / 2) 0px calc((100vw - 660px) / 2);
     vertical-align: top;
@@ -239,19 +347,52 @@ h1::after {
   }
 }
 
+/*Small-size responsive CSS*/
 @media screen and (max-width: 767px) {
-  
+
+  ul, ol {
+    height: 256px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  li {
+    line-height: 1.2;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 600;
+    font-family: sans-serif;
+  }
+
+
   .main {
     margin-top: 10px;
+  }
+
+    div #hheader {
+    border-top: 2px #cbccce solid;
+    height: 50px;
+
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: .15em;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #1d1e1f;
+  font-family: sans-serif;
+  vertical-align: top;
+  padding-top: 14.5px;
   }
 
   #headlines {
     display: inline-block;
     width: 100%;
-    height: 261px;
+    height: 306px;
     background-color: white;
     margin: 10px 0px 0px 0px;
     vertical-align: top;
+    border-bottom: #dcdddf 1px solid;
   }
 
   #content {
@@ -282,7 +423,13 @@ h1::after {
 
 }
 
+/*Large-size Responsive CSS*/
 @media screen and (min-width: 1024px) {
+  
+  ul, ol {
+      column-count: 1;
+/*    column-gap: 20px;*/
+    }
 
   .main {
     margin: 10px 20px 0px calc((100vw - 980px) / 2);
@@ -296,6 +443,7 @@ h1::after {
     margin: 0px 20px 0px calc((100vw - 980px) / 2);
     background-color: #edeef0;
   }
+
   #headlines {
     display: inline-block;
     width: 300px;
@@ -324,78 +472,3 @@ h1::after {
   }
 }
 
-img {
-  width: 100%;
-}
-
-.articleContent {
-  padding: 12px;
-}
-
-h2 {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 33.6px;
-  margin-right: 4px;
-  margin-bottom: 6px;
-  color: #1d1e1f;
-  font-family: sans-serif;
-}
-
-h3 {
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 1.4;
-  color: #1d1e1f;
-  font-family: sans-serif;
-  margin-bottom: 6px;
-  margin-right: 4px;
-}
-
-p {
-  font-family: sans-serif;
-  color: #6c6d6f;
-  font-size: 14px;
-  max-height: 72px;
-}
-
-#hheader {
-  margin: 0;
-  padding: 0px 12px 0px 12px;
-  width: 100%;
-  height: 43px;
-  border-bottom: 1px solid #edeef0;
-  vertical-align: baseline;
-  line-height: 44px;
-  font-size: 16px;
-  font-family: sans-serif;
-  color: #6c6d6f;
-}
-
-.subPic {
-  width: 180px;
-  height: 120px;
-  padding: 12px 0px 0px 20px;
-  display: inline-block;
-  vertical-align: top;
-}
-
-.logo {
-  display: inline-block;
-  width: 72px;
-  height: 40px;
-}
-
-h4 {
-  display: inline-block;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: .15em;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: #1d1e1f;
-  font-family: sans-serif;
-  height: 100%;
-  vertical-align: top;
-  padding-top: 14.5px;
-}
