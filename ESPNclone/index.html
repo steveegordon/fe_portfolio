@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="theme-color" content='18FFFF'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STEVESPN: The Worldwide Leader in Sports</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div id="viewport">
+    <header>
+      <a id="mobile-nav" href="/">
+        <span></span>
+      </a>
+      <h1>
+        <a id="main-logo" href="/">STEVESPN</a>
+      </h1>
+    </header>
+    <!-- Main article hardcoded, could be ajaxed or loaded from server -->
+          <article class="main">
+        <picture>
+          <source media="(min-width: 768px)" srcset="assets/race660.jpg">
+          <img src="assets/race768.jpg" alt="Racer">
+        </picture>
+        <div class="articleContent">
+          <h2>Watch Out! How Weasel's making a push to the head of the pack</h2>
+          <p>The diminutive racer is looking to get out of the rearview mirror, and this is how she'll pull it off.</p>
+        </div>
+      </article>
+          <div id="headlines">
+      <!-- Hardcoded headlines, ditto -->
+      <h4 id="hheader">Top Headlines</h4>
+      <ul>
+        <li>OTL: Spartan freshman subject of investigation</li>
+        <li>Rizzo at Florida vigil: 'Something has to change'</li>
+        <li>Arizona cheerleader ejected for heckling ASU</li>
+        <li>U.S. skier Shiffrin misses out on slalom medal</li>
+        <li>Silver on Magic, $50K fine: Message was clear</li>
+        <li>Young's spirits buoyed by call from the Big O</li>
+        <li>Young stars MLB teams should lock up now</li>
+      </ul>
+    </div>
+    <div id="content">
+      <!-- All content loaded in through AJAX -->
+    </div>
+  </div>
+</body>
+  <script type="text/javascript" src="app.js"></script>
+</html>
